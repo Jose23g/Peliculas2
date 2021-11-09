@@ -113,7 +113,7 @@
             </div>
         </div>
     </div>
-    <!-- lightGallery js -->
+    <!-- lightGallery js ffdtr -->
 <script type="text/javascript" src="{{asset('js/libs/lightgallery.js')}}"></script>
 
 <!-- lightGallery Thumbnails plugin -->
