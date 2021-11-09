@@ -1,0 +1,150 @@
+.flex {
+    display: flex;
+}
+.grid {
+    display: grid;
+}
+.space_around {
+    justify-content: space-around;
+}
+.space_between {
+    justify-content: space-between;
+}
+.items_center {
+    align-items: center;
+}
+body {
+    background-color: #221e29;
+    font-family: "Lato", sans-serif;
+    font-size: 17px;
+}
+.opciones {
+    z-index: 1;
+    list-style: none;
+    justify-self: end;
+}
+.opciones li {
+    margin-right: 50px;
+}
+.logo {
+    justify-self: center;
+}
+.logo_img {
+    width: 50px;
+}
+.container {
+    width: 100vw;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    position: fixed;
+    color: white;
+    z-index: 5;
+}
+.imagen {
+    width: 100%;
+}
+
+.banner_img {
+    height: 35vw;
+    overflow: hidden;
+}
+
+.informacion {
+    background-color: rgba(0, 0, 0, 0.377);
+    position: absolute;
+    top: 0;
+    color: white;
+    z-index: 1;
+    height: 35vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    font-family: "Lato", sans-serif;
+}
+.text-descripcion {
+    line-height: 2;
+    color: #a1a6a8;
+}
+
+.botones {
+    width: 100%;
+    padding: 1em;
+    grid-template-columns: 1fr 1fr;
+}
+.boton-verpeli {
+    background-color: #c34a36;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.boton-masinfo {
+    background-color: #c34a36;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 30px;
+}
+.boton-cat{
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+.busqueda {
+    justify-self: end;
+    align-items: center;
+}
+.muestra2 {
+    color: white;
+    margin-top: 2em;
+    grid-template-columns: 1fr 1fr;
+}
+.cuerpo {
+    margin-left: 3em;
+    margin-right: 3em;
+}
+.input-busqueda {
+    height: 2em;
+    width: 30vw;
+    background-color: #221e29;
+    color: white;
+    border-color: #a1a6a8;
+}
+.linea {
+    background-image: linear-gradient(
+        to right,
+        #db8a47,
+        #bc6055,
+        #894558,
+        #503249,
+        #221e29
+    );
+    width: 70vw;
+    height: 3px;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+.peliculas-seccion{
+    margin-top: 2em;
+    margin-bottom: 2em; 
+    justify-self: stretch;
+    grid-template-columns: 12vw 12vw 12vw 12vw 12vw;
+    justify-content: center;
+}
+.peli-imagen{
+    width: 10vw;
+}
+.peli-titulo{
+    margin-top: 1em;
+    color: white
+}
+.info-extra{
+    font-size: 0.9em;
+    color: #a1a6a8;
+}
+.caratula-peli{
+justify-self: center;
+margin-top: 2em;
+
+}
