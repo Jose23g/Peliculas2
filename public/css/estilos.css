@@ -87,7 +87,7 @@ body {
     text-decoration: none;
     margin-left: 30px;
 }
-.boton-cat{
+.boton-cat {
     padding-left: 3vw;
     padding-right: 3vw;
 }
@@ -125,26 +125,31 @@ body {
     margin-top: 1em;
     margin-bottom: 2em;
 }
-.peliculas-seccion{
+.peliculas-seccion {
     margin-top: 2em;
-    margin-bottom: 2em; 
+    margin-bottom: 2em;
     justify-self: stretch;
     grid-template-columns: 12vw 12vw 12vw 12vw 12vw;
     justify-content: center;
 }
-.peli-imagen{
+.peli-imagen {
     width: 10vw;
 }
-.peli-titulo{
+.peli-titulo {
     margin-top: 1em;
-    color: white
+    color: white;
+    padding-right: 1em;
 }
-.info-extra{
+.info-extra {
     font-size: 0.9em;
     color: #a1a6a8;
 }
-.caratula-peli{
-justify-self: center;
-margin-top: 2em;
-
+.caratula-peli {
+    justify-self: center;
+    margin-top: 2em;
 }
+.estreno{
+    margin: 0;
+    width: 10vw;
+}
+

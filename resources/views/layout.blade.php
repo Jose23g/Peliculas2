@@ -5,22 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/css/normalize.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link href="{{ asset(mix('css/app.css')) }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset(mix('css/app.css')) }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('css/lightslider.css') }}" type="text/css">
     <link rel="stylesheet" href="/css/estilos.css" type="text/css">
-    <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
-    <!-- lightSlider css -->
-<link rel="stylesheet" href="{{asset('css/libs/lightslider.css')}}">
 
-<!-- lightGalley css -->
-<link rel="stylesheet" href="{{asset('css/libs/lightgallery.css')}}">
-
-<!-- JQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    // Do not include both lightslider.js and lightslider.min.js
+    <script src="js/JQuery3.3.1.js" type="text/javascript"></script>
+    <script src="{{ asset(mix('js/app.js')) }}" type="text/javascript"></script>
+    <script src="{{ asset('js/lightslider.js') }}" type="text/javascript"></script>
 
     <title>Peliculas</title>
 </head>
@@ -44,7 +39,7 @@
     <div class="banner">
         <div class="tarjetas" style=>
             <div class="banner_img">
-                <img src="https://image.tmdb.org/t/p/w1280{{ $array['backdrop_path'] }}" class="imagen">
+                <img src="//image.tmdb.org/t/p/w1280{{ $array['backdrop_path'] }}" class="imagen">
             </div>
             <div class="informacion grid">
                 <div class="titulo">
@@ -80,7 +75,7 @@
                 @foreach ($populares as $pelicula)
                     <div class="caratula-peli">
                         <div class="peli-imagen">
-                            <img src="https://image.tmdb.org/t/p/w1280{{ $pelicula['poster_path'] }}"
+                            <img src="//image.tmdb.org/t/p/w1280{{ $pelicula['poster_path'] }}"
                                 class="imagen">
                         </div>
                         <div class="peli-titulo">
@@ -97,49 +92,42 @@
                 <h4>En camino...</h4>
             </div>
             <div class="linea"></div>
-            <div class="estrenos-seccion">
-                <ul id="light-slider">
-                    <li>
-                        <h3>First Slide</h3>
-                        <p>Lorem ipsum Cupidatat quis pariatur anim.</p>
-                    </li>
-                    <li>
-                        <h3>Second Slide</h3>
-                        <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
-                    </li>
-                    ...
-                </ul>
-                
+
+            <div id="carrusel" class="cs-hidden" style="color:white">
+                @foreach ($estrenos as $estreno)
+                    <div class="caratula-peli estreno">
+                        <div class="peli-imagen">
+                            <img src="//image.tmdb.org/t/p/w1280{{ $estreno['poster_path'] }}"
+                                class="imagen">
+                        </div>
+                        <div class="peli-titulo">
+                            <h5>{{ $estreno['title'] }}</h5>
+                            <div class="info-extra">
+                                <span class="tiempo">{{ $estreno['release_date'] }}</span>|
+                                <span class="calificacion">{{ $estreno['vote_average'] }}%</span>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
             </div>
         </div>
     </div>
-    <!-- lightGallery js ffdtr -->
-<script type="text/javascript" src="{{asset('js/libs/lightgallery.js')}}"></script>
-
-<!-- lightGallery Thumbnails plugin -->
-<script type="text/javascript" src="{{asset('js/libs/lg-thumbnail.js')}}"></script>
-
-<!-- lightSlider js -->
-    <script type="text/javascript" src="{{asset('js/libs/lightslider.js')}}"></script>
-    <script type="text/javascript">
-    $(document).ready(function() {
-    $('#imageGallery').lightSlider({
-        gallery:true,
-        item:1,
-        loop:true,
-        thumbItem:9,
-        slideMargin:0,
-        enableDrag: false,
-        currentPagerPosition:'left',
-        onSliderLoad: function(el) {
-            el.lightGallery({
-                selector: '#imageGallery .lslide'
+    <script>
+        $(document).ready(function() {
+            var autoplaySlider = $('#carrusel').lightSlider({
+                auto: false,
+                loop: false,
+                pauseOnHover: true,
+                autoWidth: true,
+                adaptiveHeight: false,
+                slideMargin: 50,
+                onBeforeSlide: function(el) {
+                    $('#current').text(el.getCurrentSlideCount());
+                }
             });
-        }   
-    });  
-  });
-  </script>
-    
+            $('#total').text(autoplaySlider.getTotalSlideCount());
+        });
+    </script>
 </body>
 
 </html>
