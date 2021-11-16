@@ -4,6 +4,9 @@
 .grid {
     display: grid;
 }
+.space-evenly{
+    justify-content: space-evenly;
+}
 .space_around {
     justify-content: space-around;
 }
@@ -17,6 +20,9 @@ body {
     background-color: #221e29;
     font-family: "Lato", sans-serif;
     font-size: 17px;
+}
+.navbar-header{
+    justify-content: center;
 }
 .opciones {
     z-index: 1;
@@ -152,4 +158,27 @@ body {
     margin: 0;
     width: 10vw;
 }
-
+.footer-contenido{
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 30vh;
+    padding-top: 5vh;
+}
+.footer{
+    background-color: #1f1f1f;
+    color: white;
+}
+.abajo{
+    align-self: end;
+    justify-self: center;
+}
+.footer-redes{
+    justify-self:end;
+}
+.redes-iconos{
+    margin-right: 2em;
+    font-size: 1.5em;
+    color: white;
+}
+.contacto{
+    text-align: center;
+}
