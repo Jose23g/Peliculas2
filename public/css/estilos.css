@@ -45,6 +45,7 @@ body {
     position: fixed;
     color: white;
     z-index: 5;
+    margin-top: 9px;
 }
 .imagen {
     width: 100%;
