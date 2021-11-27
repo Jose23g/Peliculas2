@@ -23,4 +23,10 @@ class PeliculaController extends Controller
         $estrenos = $estrenos['results'];
         return view('layout', compact('array' , 'populares' , 'estrenos'));
     }
+    public function detalle($id)
+    {
+        $respuesta = Http::get('https://api.themoviedb.org/3/movie/'.$id.'?api_key=c94ae96d76db457ccdb3767fef477a02&language=en-es');
+        $array = $respuesta->json();
+        return view('detalle', compact('array'));
+    }
 }

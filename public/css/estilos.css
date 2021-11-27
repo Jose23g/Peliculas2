@@ -4,7 +4,7 @@
 .grid {
     display: grid;
 }
-.space-evenly{
+.space-evenly {
     justify-content: space-evenly;
 }
 .space_around {
@@ -21,7 +21,7 @@ body {
     font-family: "Lato", sans-serif;
     font-size: 17px;
 }
-.navbar-header{
+.navbar-header {
     justify-content: center;
 }
 .opciones {
@@ -73,6 +73,9 @@ body {
     line-height: 2;
     color: #a1a6a8;
 }
+.links {
+    text-decoration: none;
+}
 
 .botones {
     width: 100%;
@@ -80,19 +83,29 @@ body {
     grid-template-columns: 1fr 1fr;
 }
 .boton-verpeli {
-    background-color: #c34a36;
+    background-color: #2a2730;
     color: white;
     padding: 10px;
     border-radius: 5px;
     text-decoration: none;
 }
 .boton-masinfo {
-    background-color: #c34a36;
+    background-color: #2a2730;
     color: white;
     padding: 10px;
     border-radius: 5px;
     text-decoration: none;
     margin-left: 30px;
+}
+.boton-verpeli:hover {
+    background-color: #c34a36;
+    color: white;
+    transition-duration: 0.3s;
+}
+.boton-masinfo:hover {
+    background-color: #c34a36;
+    color: white;
+    transition-duration: 0.3s;
 }
 .boton-cat {
     padding-left: 3vw;
@@ -155,31 +168,31 @@ body {
     justify-self: center;
     margin-top: 2em;
 }
-.estreno{
+.estreno {
     margin: 0;
     width: 10vw;
 }
-.footer-contenido{
+.footer-contenido {
     grid-template-columns: 1fr 1fr 1fr;
     height: 30vh;
     padding-top: 5vh;
 }
-.footer{
+.footer {
     background-color: #1f1f1f;
     color: white;
 }
-.abajo{
+.abajo {
     align-self: end;
     justify-self: center;
 }
-.footer-redes{
-    justify-self:end;
+.footer-redes {
+    justify-self: end;
 }
-.redes-iconos{
+.redes-iconos {
     margin-right: 2em;
     font-size: 1.5em;
     color: white;
 }
-.contacto{
+.contacto {
     text-align: center;
 }

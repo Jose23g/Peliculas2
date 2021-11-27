@@ -96,68 +96,70 @@
 
             <div id="carrusel" class="cs-hidden" style="color:white">
                 @foreach ($estrenos as $estreno)
-                    <div class="caratula-peli estreno">
-                        <div class="peli-imagen">
-                            <img src="//image.tmdb.org/t/p/w1280{{ $estreno['poster_path'] }}"
-                                class="imagen">
-                        </div>
-                        <div class="peli-titulo">
-                            <h5>{{ $estreno['title'] }}</h5>
-                            <div class="info-extra">
-                                <span
-                                    class="tiempo">{{ $estreno['release_date'] }}</span>&nbsp;&nbsp;|&nbsp;&nbsp;
-                                <span class="calificacion">{{ $estreno['vote_average'] }}%</span>
+                    <a class="links" href="{{route('pelicula.info', $estreno['id'])}}">
+                        <div class="caratula-peli estreno">
+                            <div class="peli-imagen">
+                                <img src="//image.tmdb.org/t/p/w1280{{ $estreno['poster_path'] }}"
+                                    class="imagen">
+                            </div>
+                            <div class="peli-titulo">
+                                <h5>{{ $estreno['title'] }}</h5>
+                                <div class="info-extra">
+                                    <span
+                                        class="tiempo">{{ $estreno['release_date'] }}</span>&nbsp;&nbsp;|&nbsp;&nbsp;
+                                    <span class="calificacion">{{ $estreno['vote_average'] }}%</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 @endforeach
             </div>
         </div>
     </div>
-        <footer class="footer">
-            <div class="footer-contenido grid">
-                <div class="logo">
-                    <img src="/img/logo.png" class="logo_img">
+    <footer class="footer">
+        <div class="footer-contenido grid">
+            <div class="logo">
+                <img src="/img/logo.png" class="logo_img">
+            </div>
+            <div class="footer-info grid">
+                <div class="arriba flex space_around">
+                    <h6>Home</h6>
+                    <h6>Schedule</h6>
+                    <h6>Movies</h6>
+                    <h6>News</h6>
                 </div>
-                <div class="footer-info grid">
-                    <div class="arriba flex space_around">
-                        <h6>Home</h6>
-                        <h6>Schedule</h6>
-                        <h6>Movies</h6>
-                        <h6>News</h6>
-                    </div>
-                    <div class="abajo">
-                        <div class="contacto">
-                            <h6>adrian23gb@hotmail.com</h6>
-                            <h6>+506 84499545</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-redes">
-                    <div class="redes">
-                        <a href="#" class="redes-iconos"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="redes-iconos"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="redes-iconos"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="redes-iconos"><i class="fab fa-youtube"></i></a>
+                <div class="abajo">
+                    <div class="contacto">
+                        <h6>adrian23gb@hotmail.com</h6>
+                        <h6>+506 84499545</h6>
                     </div>
                 </div>
-        </footer>
-        <script>
-            $(document).ready(function() {
-                var autoplaySlider = $('#carrusel').lightSlider({
-                    auto: false,
-                    loop: false,
-                    pauseOnHover: true,
-                    autoWidth: true,
-                    adaptiveHeight: false,
-                    slideMargin: 50,
-                    onBeforeSlide: function(el) {
-                        $('#current').text(el.getCurrentSlideCount());
-                    }
-                });
-                $('#total').text(autoplaySlider.getTotalSlideCount());
+            </div>
+            <div class="footer-redes">
+                <div class="redes">
+                    <a href="#" class="redes-iconos"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="redes-iconos"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="redes-iconos"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="redes-iconos"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+    </footer>
+    <script>
+        $(document).ready(function() {
+            var autoplaySlider = $('#carrusel').lightSlider({
+                auto: false,
+                loop: false,
+                pauseOnHover: true,
+                autoWidth: true,
+                adaptiveHeight: false,
+                slideMargin: 50,
+                onBeforeSlide: function(el) {
+                    $('#current').text(el.getCurrentSlideCount());
+                }
             });
-        </script>
+            $('#total').text(autoplaySlider.getTotalSlideCount());
+        });
+    </script>
 </body>
 
 </html>
