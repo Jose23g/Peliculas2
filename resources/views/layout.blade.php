@@ -9,13 +9,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ secure_asset(mix('css/app.css')) }}" type="text/css">
-    <link rel="stylesheet" href="{{ secure_asset('css/lightslider.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset(mix('css/app.css')) }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('css/lightslider.css') }}" type="text/css">
     <link rel="stylesheet" href="/css/estilos.css" type="text/css">
 
     <script src="js/JQuery3.3.1.js" type="text/javascript"></script>
-    <script src="{{ secure_asset(mix('js/app.js')) }}" type="text/javascript"></script>
-    <script src="{{ secure_asset('js/lightslider.js') }}" type="text/javascript"></script>
+    <script src="{{ asset(mix('js/app.js')) }}" type="text/javascript"></script>
+    <script src="{{ asset('js/lightslider.js') }}" type="text/javascript"></script>
 
     <title>Peliculas</title>
 </head>
