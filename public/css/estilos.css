@@ -20,6 +20,8 @@ body {
     background-color: #221e29;
     font-family: "Lato", sans-serif;
     font-size: 17px;
+    width: 100%;
+    height: 100%;
 }
 .navbar-header {
     justify-content: center;

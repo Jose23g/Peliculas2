@@ -3,11 +3,11 @@
         display: none;
     }
     .tarjetas {
-        height: 50vh;
+        height: 60vh;
     }
     .banner_img {
         width: 100%;
-        height: 50vh;
+        height: 60vh;
     }
     .imagen {
         width: 100%;
@@ -18,8 +18,8 @@
         object-fit: cover;
     }
     .informacion{
-        height: 50vh;
-        width: 100%;
+        height: 60vh;
+        width: 100vw;
         padding-left: 5vw;
         padding-right: 0;
     }
