@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="{{ asset(mix('css/app.css')) }}" type="text/css">
     <link rel="stylesheet" href="{{ asset('css/lightslider.css') }}" type="text/css">
     <link rel="stylesheet" href="/css/estilos.css" type="text/css">
+    <link rel="stylesheet" href="/css/responsive.css" type="text/css">
 
     <script src="js/JQuery3.3.1.js" type="text/javascript"></script>
     <script src="{{ asset(mix('js/app.js')) }}" type="text/javascript"></script>
@@ -39,7 +40,7 @@
     <div class="banner">
         <div class="tarjetas" style=>
             <div class="banner_img">
-                <img src="//image.tmdb.org/t/p/w1280{{ $array['backdrop_path'] }}" class="imagen">
+                <img src="//image.tmdb.org/t/p/w1280{{ $array['backdrop_path'] }}" class="imagen img-banner">
             </div>
             <div class="informacion grid">
                 <div class="titulo">
@@ -73,20 +74,22 @@
             </div>
             <div class="peliculas-seccion grid">
                 @foreach ($populares as $pelicula)
-                    <div class="caratula-peli">
-                        <div class="peli-imagen">
-                            <img src="//image.tmdb.org/t/p/w1280{{ $pelicula['poster_path'] }}"
-                                class="imagen">
-                        </div>
-                        <div class="peli-titulo">
-                            <h5>{{ $pelicula['title'] }}</h5>
-                            <div class="info-extra">
-                                <span
-                                    class="tiempo">{{ $pelicula['media_type'] }}</span>&nbsp;&nbsp;|&nbsp;&nbsp;
-                                <span class="calificacion">{{ $pelicula['vote_average'] }}%</span>
+                    <a class="links" href="{{ route('pelicula.info', $pelicula['id']) }}">
+                        <div class="caratula-peli">
+                            <div class="peli-imagen">
+                                <img src="//image.tmdb.org/t/p/w1280{{ $pelicula['poster_path'] }}"
+                                    class="imagen">
+                            </div>
+                            <div class="peli-titulo">
+                                <h5>{{ $pelicula['title'] }}</h5>
+                                <div class="info-extra">
+                                    <span
+                                        class="tiempo">{{ $pelicula['media_type'] }}</span>&nbsp;&nbsp;|&nbsp;&nbsp;
+                                    <span class="calificacion">{{ $pelicula['vote_average'] }}%</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 @endforeach
             </div>
             <div class="muestra2">
@@ -96,7 +99,7 @@
 
             <div id="carrusel" class="cs-hidden" style="color:white">
                 @foreach ($estrenos as $estreno)
-                    <a class="links" href="{{route('pelicula.info', $estreno['id'])}}">
+                    <a class="links" href="{{ route('pelicula.info', $estreno['id']) }}">
                         <div class="caratula-peli estreno">
                             <div class="peli-imagen">
                                 <img src="//image.tmdb.org/t/p/w1280{{ $estreno['poster_path'] }}"
