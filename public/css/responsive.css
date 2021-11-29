@@ -17,44 +17,62 @@
         height: 100%;
         object-fit: cover;
     }
-    .cuerpo{
+    .cuerpo {
         margin-left: 1em;
         margin-right: 1em;
     }
-    .linea{
+    .linea {
         width: 90vw;
     }
-    .informacion{
+    .informacion {
         height: 60vh;
         width: 100vw;
         padding-left: 5vw;
         padding-right: 0;
     }
-    .descripcion{
+    .descripcion {
         width: 90vw;
         height: 30vh;
         overflow: hidden;
     }
-    .muestra2{
+    .muestra2 {
         display: block;
     }
-    .input-busqueda{
+    .input-busqueda {
         width: 100%;
         height: 7vw;
     }
-    .peliculas-seccion{
+    .peliculas-seccion {
         grid-template-columns: 1fr 1fr;
+        margin-top: 0;
     }
-    .peli-imagen{
-        width: 50vw; 
+    .peli-imagen {
+        width: 50vw;
         padding-left: 3vw;
         padding-right: 3vw;
     }
-    .peli-titulo{
+    .peli-titulo {
         padding-left: 3vw;
         padding-right: 3vw;
     }
-    .peli-titulo h5{
+    .peli-titulo h5 {
         font-size: 4vw;
+    }
+
+    .footer-contenido {
+        grid-template-columns: auto;
+        height: 40vh;
+    }
+    .footer-redes {
+        display: flex;
+        align-items: center;
+        justify-self: center;
+    }
+    .redes-iconos {
+        margin-right: 1em;
+        margin-left: 1em;
+    }
+    .estreno {
+        width: 50vw;
     }
 }

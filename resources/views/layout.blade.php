@@ -155,7 +155,7 @@
                 pauseOnHover: true,
                 autoWidth: true,
                 adaptiveHeight: false,
-                slideMargin: 50,
+                slideMargin: 9,
                 onBeforeSlide: function(el) {
                     $('#current').text(el.getCurrentSlideCount());
                 }
