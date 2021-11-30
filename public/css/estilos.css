@@ -48,6 +48,7 @@ body {
     color: white;
     z-index: 5;
     margin-top: 9px;
+    transition-duration: .3s;
 }
 .imagen {
     width: 100%;
