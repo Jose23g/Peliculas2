@@ -2,8 +2,15 @@
     .logo_img{
         width: 40px;
     }
+    .logo{
+        align-self: center;
+    }
     .opciones {
         display: none;
+    }
+    .container {
+        margin: 0;
+        height: 3.5em;
     }
     .tarjetas {
         height: 60vh;

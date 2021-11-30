@@ -162,6 +162,17 @@
             });
             $('#total').text(autoplaySlider.getTotalSlideCount());
         });
+
+        $(function() {
+            $(window).on("scroll", function() {
+                if ($(window).scrollTop() > 50) {
+                    $(".container").addClass("cambio");
+                } else {
+                    //remove the background property so it comes transparent again (defined in your css)
+                    $(".container").removeClass("cambio");
+                }
+            });
+        });
     </script>
 </body>
 
