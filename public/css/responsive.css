@@ -11,6 +11,7 @@
     .container {
         margin: 0;
         height: 3.5em;
+        padding: 0;
     }
     .tarjetas {
         height: 60vh;
