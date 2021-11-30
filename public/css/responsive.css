@@ -18,8 +18,9 @@
         object-fit: cover;
     }
     .botones {
-        min-width: 79vw;
-        max-width: 79vw;
+        min-width: 94vw;
+        max-width: 94vw;
+        padding: 2em 0 0 0;
     }
     .cuerpo {
         margin-left: 1em;
@@ -33,10 +34,11 @@
         width: 100vw;
         padding-left: 5vw;
         padding-right: 0;
+        padding-top: 2vw;
     }
     .descripcion {
         width: 90vw;
-        height: 30vh;
+        height: 31vh;
         overflow: hidden;
     }
     .muestra2 {
@@ -78,5 +80,14 @@
     }
     .estreno {
         width: 50vw;
+    }
+    .categoria {
+        display: flex;
+    }
+    .boton-cat {
+        padding-left: 3vw;
+        padding-right: 3vw;
+        border-left-width: 3vw;
+        margin-left: 3vw;
     }
 }
