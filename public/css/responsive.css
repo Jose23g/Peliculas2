@@ -1,4 +1,7 @@
 @media (max-width: 500px) {
+    .logo_img{
+        width: 40px;
+    }
     .opciones {
         display: none;
     }
