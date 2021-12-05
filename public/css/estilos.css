@@ -58,7 +58,8 @@ body {
 }
 
 .informacion {
-    background-color: rgba(0, 0, 0, 0.377);
+    
+    background: linear-gradient(to bottom, #000000ad,#2a272acc, #221e29);
     position: absolute;
     top: 0;
     color: white;
