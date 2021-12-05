@@ -94,6 +94,7 @@
     }
     .categoria {
         display: flex;
+        font-size: 3vw;
     }
     .boton-cat {
         padding-left: 3vw;

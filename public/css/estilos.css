@@ -48,7 +48,7 @@ body {
     color: white;
     z-index: 5;
     margin-top: 9px;
-    transition-duration: .3s;
+    transition-duration: 0.3s;
 }
 .imagen {
     width: 100%;
@@ -79,9 +79,12 @@ body {
 .links {
     text-decoration: none;
 }
+.titulo {
+    width: 76vw;
+}
 
 .botones {
-    width: 100vw;
+    width: 80vw;
     padding: 1em;
     grid-template-columns: 1fr 1fr;
 }
@@ -199,10 +202,10 @@ body {
 .contacto {
     text-align: center;
 }
-.cambio{
+.cambio {
     background-color: #221e29;
-	box-shadow: 0 16px 22px rgba(0, 0, 0, 0.8)  ; 
+    box-shadow: 0 16px 22px rgba(0, 0, 0, 0.8);
 }
-.categoria{
-    font-size: 3vw;
+.categoria {
+    font-size: 1vw;
 }
