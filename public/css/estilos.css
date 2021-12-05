@@ -23,13 +23,12 @@ body {
     width: 100%;
     height: 100%;
 }
-.navbar-header {
-    justify-content: center;
-}
+
 .opciones {
     z-index: 1;
     list-style: none;
     justify-self: end;
+    margin: 0;
 }
 .opciones li {
     margin-right: 50px;
@@ -40,15 +39,14 @@ body {
 .logo_img {
     width: 50px;
 }
+.header-container{
+    transition-duration: 0.3s;
+}
 .container {
     width: 100vw;
     grid-template-columns: 1fr 2fr;
     justify-content: center;
-    position: fixed;
-    color: white;
-    z-index: 5;
-    margin-top: 9px;
-    transition-duration: 0.3s;
+    color: white; 
 }
 .imagen {
     width: 100%;

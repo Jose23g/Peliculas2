@@ -22,8 +22,8 @@
 </head>
 
 <body>
-    <header class="flex navbar-header">
-        <div class="container grid">
+    <header class=" header-container flex navbar fixed-top navbar-expand-lg">
+        <nav class="container grid">
             <div class="logo">
                 <img src="/img/logo.png" class="logo_img">
             </div>
@@ -35,7 +35,7 @@
                     <li>News</li>
                 </ul>
             </div>
-        </div>
+        </nav>
     </header>
     <div class="banner">
         <div class="tarjetas" style=>
@@ -166,10 +166,10 @@
         $(function() {
             $(window).on("scroll", function() {
                 if ($(window).scrollTop() > 50) {
-                    $(".container").addClass("cambio");
+                    $(".header-container").addClass("cambio");
                 } else {
                     //remove the background property so it comes transparent again (defined in your css)
-                    $(".container").removeClass("cambio");
+                    $(".header-container").removeClass("cambio");
                 }
             });
         });
