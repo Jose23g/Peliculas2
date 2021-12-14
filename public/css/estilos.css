@@ -59,7 +59,7 @@ body {
 
 .informacion {
     
-    background: linear-gradient(to bottom, #000000ad,#2a272acc, #221e29);
+    background: #1211117a;
     position: absolute;
     top: 0;
     color: white;
@@ -74,12 +74,13 @@ body {
 .text-descripcion {
     line-height: 2;
     color: #a1a6a8;
+    text-align: justify;
 }
 .links {
     text-decoration: none;
 }
 .titulo {
-    width: 76vw;
+    width: 56vw;
 }
 
 .botones {
