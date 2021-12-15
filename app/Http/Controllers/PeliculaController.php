@@ -21,7 +21,7 @@ class PeliculaController extends Controller
     
         $populares = $populares['results'];
         $estrenos = $estrenos['results'];
-        return view('layout', compact('array' , 'populares' , 'estrenos'));
+        return view('principal', compact('array' , 'populares' , 'estrenos'));
     }
     public function detalle($id)
     {
