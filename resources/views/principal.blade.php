@@ -1,6 +1,6 @@
 @extends('layout')
 @section('content')
-    
+
     <div class="banner">
         <div class="tarjetas" style=>
             <div class="banner_img">
@@ -83,4 +83,4 @@
             </div>
         </div>
     </div>
-    
+@endsection
