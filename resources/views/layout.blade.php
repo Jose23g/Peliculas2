@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="{{ asset(mix('css/app.css')) }}" type="text/css">
     <link rel="stylesheet" href="{{ asset('css/lightslider.css') }}" type="text/css">
     <link rel="stylesheet" href="/css/estilos.css" type="text/css">
     <link rel="stylesheet" href="/css/responsive.css" type="text/css">
+
     <script src="js/JQuery3.3.1.js" type="text/javascript"></script>
     <script src="{{ asset(mix('js/app.js')) }}" type="text/javascript"></script>
     <script src="{{ asset('js/lightslider.js') }}" type="text/javascript"></script>
@@ -21,7 +23,7 @@
 </head>
 
 <body>
-    <header class=" header-container flex navbar fixed-top navbar-expand-lg">
+    <header class="header-container flex navbar fixed-top navbar-expand-lg">
         <nav class="container grid">
             <div class="logo">
                 <img src="/img/logo.png" class="logo_img">
@@ -36,9 +38,14 @@
             </div>
         </nav>
     </header>
-   
-    @yield('content')
-   
+    <div class="banner">
+        <div class="tarjetas" style=>
+            @yield('banner')
+        </div>
+    </div>
+    <div class="cuerpo">
+        @yield('content')
+    </div>
     <footer class="footer">
         <div class="footer-contenido grid">
             <div class="logo">

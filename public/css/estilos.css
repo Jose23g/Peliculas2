@@ -239,3 +239,6 @@ body {
 .categoria {
     font-size: 1vw;
 }
+.info-detalle{
+    grid-template-columns: 1fr 3fr;
+}
