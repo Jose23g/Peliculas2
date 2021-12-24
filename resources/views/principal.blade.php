@@ -76,4 +76,5 @@
             @endforeach
         </div>
     </div>  
+    <script src="{{ asset('js/archivo.js') }}" type="text/javascript"></script>
 @endsection

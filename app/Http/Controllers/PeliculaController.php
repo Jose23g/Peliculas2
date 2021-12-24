@@ -27,6 +27,9 @@ class PeliculaController extends Controller
     {
         $respuesta = Http::get('https://api.themoviedb.org/3/movie/'.$id.'?api_key=c94ae96d76db457ccdb3767fef477a02&language=en-es');
         $array = $respuesta->json();
-        return view('detalle', compact('array'));
+        $cast = Http::get('https://api.themoviedb.org/3/movie/'.$id.'/credits?api_key=c94ae96d76db457ccdb3767fef477a02&language=en-US');
+        $elenco = $cast->json();
+
+        return view('detalle', compact('array', 'elenco'));
     }
 }

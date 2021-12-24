@@ -15,9 +15,11 @@
     <link rel="stylesheet" href="/css/estilos.css" type="text/css">
     <link rel="stylesheet" href="/css/responsive.css" type="text/css">
 
-    <script src="js/JQuery3.3.1.js" type="text/javascript"></script>
+    <script src="{{asset('js/JQuery3.3.1.js')}}" type="text/javascript"></script>
     <script src="{{ asset(mix('js/app.js')) }}" type="text/javascript"></script>
     <script src="{{ asset('js/lightslider.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('js/archivo.js') }}" type="text/javascript"></script>
+    
 
     <title>Peliculas</title>
 </head>
@@ -74,34 +76,6 @@
                 </div>
             </div>
     </footer>
-    <script>
-        $(document).ready(function() {
-            var autoplaySlider = $('#carrusel').lightSlider({
-                auto: false,
-                loop: false,
-                pauseOnHover: true,
-                autoWidth: true,
-                adaptiveHeight: false,
-                slideMargin: 9,
-                onBeforeSlide: function(el) {
-                    $('#current').text(el.getCurrentSlideCount());
-                }
-            });
-            $('#total').text(autoplaySlider.getTotalSlideCount());
-        });
-
-        $(function() {
-            $(window).on("scroll", function() {
-                if ($(window).scrollTop() > 50) {
-                    $(".header-container").addClass("cambio");
-                } else {
-                    //remove the background property so it comes transparent again (defined in your css)
-                    $(".header-container").removeClass("cambio");
-                }
-            });
-        });
-    </script>
-
 </body>
 
 </html>

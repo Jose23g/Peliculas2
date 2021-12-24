@@ -189,7 +189,7 @@ body {
     justify-content: center;
 }
 .peli-imagen {
-    width: 10vw;
+    width: 13rem;
 }
 .peli-titulo {
     margin-top: 1em;
@@ -239,6 +239,48 @@ body {
 .categoria {
     font-size: 1vw;
 }
-.info-detalle{
-    grid-template-columns: 1fr 3fr;
+.info-detalle {
+    grid-template-columns: 0.5fr 2fr 0.9fr;
+}
+.info-hijo {
+    justify-self: center;
+}
+.contenedor-overview {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    align-self: center;
+    text-justify: justify;
+}
+.overview {
+    color: #a1a6a8;
+    font-size: 1.2em;
+}
+.contenedor-detalle {
+    align-self: center;
+}
+.detalle {
+    color: #a1a6a8;
+    font-size: 1.2em;
+}
+.detalle-titulo {
+    align-items: flex-end;
+}
+.detalle-titulo p {
+    color: white;
+    margin-bottom: 3px;
+}
+.detalle-titulo h5 {
+    margin-bottom: 3px;
+}
+hr {
+    border: 1px solid #a1a6a8;
+    margin-top: 3px;
+}
+.info-detalle h1 {
+    color: white;
+    font-size: 1.5em;
+}
+
+.elenco-imagen {
+    width: 12em;
 }
