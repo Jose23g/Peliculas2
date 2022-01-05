@@ -108,6 +108,7 @@ body {
 }
 .links {
     text-decoration: none;
+    justify-self: stretch;
 }
 .titulo {
     width: 56vw;
@@ -184,8 +185,7 @@ body {
 .peliculas-seccion {
     margin-top: 2em;
     margin-bottom: 2em;
-    justify-self: stretch;
-    grid-template-columns: 12vw 12vw 12vw 12vw 12vw;
+    grid-template-columns: 15rem 15rem 15rem 15rem 15rem;
     justify-content: center;
 }
 .peli-imagen {
@@ -201,7 +201,6 @@ body {
     color: #a1a6a8;
 }
 .caratula-peli {
-    justify-self: center;
     margin-top: 2em;
 }
 .estreno {
@@ -280,7 +279,11 @@ hr {
     color: white;
     font-size: 1.5em;
 }
+.elenco{
 
+height:21em;
+
+}
 .elenco-imagen {
     width: 12em;
 }

@@ -1,3 +1,8 @@
+@media (max-width: 1024px) {
+    .peliculas-seccion{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
 @media (max-width: 500px) {
     .logo_img {
         width: 38px;

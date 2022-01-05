@@ -51,7 +51,7 @@
         </div>
         <h1>Elenco</h1>
         <div class="linea"></div>
-        <div class="elenco flex space_between cs-hidden" id="carrucel">
+        <div class="elenco flex space_between cs-hidden" id="carrusel">
             @foreach ($elenco['cast'] as $cast)
                 <div class="elenco-hijo">
                     <div class="elenco-imagen">

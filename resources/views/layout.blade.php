@@ -15,11 +15,9 @@
     <link rel="stylesheet" href="/css/estilos.css" type="text/css">
     <link rel="stylesheet" href="/css/responsive.css" type="text/css">
 
-    <script src="{{asset('js/JQuery3.3.1.js')}}" type="text/javascript"></script>
+    <script src="{{ asset('js/JQuery3.3.1.js') }}" type="text/javascript"></script>
     <script src="{{ asset(mix('js/app.js')) }}" type="text/javascript"></script>
     <script src="{{ asset('js/lightslider.js') }}" type="text/javascript"></script>
-    <script src="{{ asset('js/archivo.js') }}" type="text/javascript"></script>
-    
 
     <title>Peliculas</title>
 </head>
@@ -76,6 +74,6 @@
                 </div>
             </div>
     </footer>
+    <script src="{{ asset('js/archivo.js') }}" type="text/javascript"></script>
 </body>
-
 </html>
