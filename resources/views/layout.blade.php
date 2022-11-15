@@ -30,7 +30,7 @@
             </div>
             <div class="opciones">
                 <ul class="opciones flex">
-                    <li><a href="#">Home</a></li>
+                    <li><a href={{ url('formulario') }}>Home</a></li>
                     <li><a href="#">Schedule</a></li>
                     <li><a href="#">Movies</a></li>
                     <li><a href="#">News</a></li>

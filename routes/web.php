@@ -15,6 +15,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-
-Route::get('/',[PeliculaController::class, 'banner'])->name('inicio');
-Route::get('/informacion/{id}',[PeliculaController::class, 'detalle'])->name('pelicula.info');
+Route::get('/', [PeliculaController::class, 'banner'])->name('inicio');
+Route::get('/informacion/{id}', [PeliculaController::class, 'detalle'])->name('pelicula.info');
+Route::get('/formulario', [PeliculaController::class, 'formulario'])->name('form');

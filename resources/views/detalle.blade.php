@@ -2,8 +2,10 @@
 @section('banner')
     <div class="banner_img">
         <img src="//image.tmdb.org/t/p/w1280{{ $array['backdrop_path'] }}" class="imagen img-banner">
+        <h1>HOLA MUNDO</h1>
     </div>
 @endsection
+
 @section('content')
     <div class="">
         <div class="info-detalle grid">
@@ -64,5 +66,4 @@
             @endforeach
         </div>
     </div>
-    
 @endsection

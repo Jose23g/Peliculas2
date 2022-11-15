@@ -160,6 +160,7 @@ body {
 .cuerpo {
     margin-left: 3em;
     margin-right: 3em;
+    background-color: #db8a47;
 }
 .input-busqueda {
     height: 2em;
